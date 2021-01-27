@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #ede7f6;
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background-color: #111;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .sec {
+  margin-right: 30px;
+}
+footer .about-us {
+  width: 40%;
+}
+footer .sec h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .sec h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #f00;
+}
+footer .about-us p {
+  color: #999;
+}
+footer .about-us .sci {
+  margin-top: 20px;
+  display: flex;
+}
+footer .about-us .sci li {
+  list-style: none;
+}
+footer .about-us .sci li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  text-decoration: none;
+  border-radius: 4px;
+}
+footer .about-us .sci li a:hover {
+  background-color: #f00;
+}
+footer .about-us .sci li a .fab {
+  color: #fff;
+  font-size: 20px;
+}
+footer .quick-links {
+  width: 25%;
+}
+footer .quick-links ul li {
+  list-style: none;
+}
+footer .quick-links ul li a {
+  display: inline-block;
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+footer .quick-links ul li a:hover {
+  color: #fff;
+}
+footer .contact {
+  width: calc(35% - 60px);
+  margin-right: 0;
+}
+footer .contact .info li {
+  display: flex;
+  list-style: none;
+  margin-bottom: 16px;
+}
+footer .contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+footer .contact .info li span,
+footer .contact .info li p a {
+  color: #999;
+}
+footer .contact .info li p a {
+  text-decoration: none;
+}
+footer .contact .info li p a:hover {
+  color: #fff;
+}
+.copyright {
+  width: 100%;
+  background-color: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .sec {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  footer .about-us,
+  footer .quick-links,
+  footer .contact {
+    width: 100%;
+  }
+  .copyright {
+    padding: 8px 40px;
+  }
+}
